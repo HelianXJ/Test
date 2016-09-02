@@ -1,0 +1,38 @@
+{
+  "private": true,
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-2": "^6.11.0",
+    "clean-webpack-plugin": "^0.1.9",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "grunt": "^1.0.1",
+    "immutable": "^3.8.1",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "optimize-css-assets-webpack-plugin": "^1.3.0",
+    "react": "^15.1.0",
+    "react-addons-pure-render-mixin": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.5.1",
+    "react-router-redux": "^4.0.5",
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "scripts": {
+    "debug": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline --watch --colors --port 9090 -d",
+    "build": "grunt"
+  },
+  "dependencies": {
+    "redux-form": "^5.3.1"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "private": true,
+  "scripts": {
+    "debug": "nodemon --exec babel-node ./lib/server.js",
+    "debug-build": "nodemon ./build/server.js",
+    "build": "rm -rf ./build && babel -d ./build ./lib"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "connect-redis": "^3.1.0",
+    "cookie-parser": "~1.4.3",
+    "csurf": "^1.9.0",
+    "debug": "~2.2.0",
+    "ejs": "~2.4.1",
+    "express": "~4.14.0",
+    "express-session": "^1.13.0",
+    "mongoose": "^4.5.2",
+    "morgan": "~1.7.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "sha1": "^1.1.1"
+  },
+  "babel": {
+    "plugins": [
+      "transform-strict-mode",
+      "transform-es2015-modules-commonjs",
+      "transform-es2015-spread",
+      "transform-es2015-destructuring",
+      "transform-es2015-parameters"
+    ]
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-destructuring": "^6.9.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.10.3",
+    "babel-plugin-transform-es2015-parameters": "^6.9.0",
+    "babel-plugin-transform-es2015-spread": "^6.8.0",
+    "babel-plugin-transform-strict-mode": "^6.8.0"
+  }
+}

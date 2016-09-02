@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+<% if (env.mode === 'dev') { %>
+        <script src="http://localhost:9090/bundle.js" defer async="true"></script>
+<% } else { %>
+        <script src="http://<%= env.domain %>/assets/<%= assetVersion %>/js/app.min.js" defer async="true"></script>
+        <link href="http://<%= env.domain %>/assets/<%= assetVersion %>/css/app.min.css" rel="stylesheet">
+<% } %>
+    </head>
+    <body>
+        <div id="container"></div>
+        <input id="js-csrf-token" type="hidden" value="<%=csrfToken%>"/>
+    </body>
+</html>
